@@ -1,0 +1,25 @@
+<div>
+<nav class="navbar navbar-inverse" style="margin-bottom:0;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <i class="glyphicon glyphicon-grain"></i>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a [routerLink] = '["/Home"]'>Home</a></li>
+            <li><a [routerLink] = '["/Clothes/viewClothes"]'>Clothes</a></li>
+            <li><a [routerLink] = '["/Furniture/viewFurniture"]'>Furniture</a></li>
+            <li><a [routerLink] = '["/Electronics/viewElectronics"]'>Electronics</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Orders</a></li>
+        </ul>
+        </div>
+    </div>
+  </nav>
+  <div class="container-fluid" style="background-color: beige;">
+   <router-outlet></router-outlet>
+  </div>
+  </div>
